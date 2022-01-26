@@ -1,2 +1,2 @@
 # Curso-de-Delphi
-Curso para aprendizagem da linguagem Delphi 
+Curso para aprendizagem Delphi 
