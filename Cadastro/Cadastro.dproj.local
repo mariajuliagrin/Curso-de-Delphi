@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2022/01/26 10:07:22.158,=C:\Users\julia\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/01/26 10:27:04.093,C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Cadastro\unitPrincipal.dfm=C:\Users\julia\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/01/26 10:27:04.093,C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Cadastro\unitPrincipal.pas=C:\Users\julia\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/01/26 10:27:09.651,C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Cadastro\Cadastro.dproj=C:\Users\julia\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
