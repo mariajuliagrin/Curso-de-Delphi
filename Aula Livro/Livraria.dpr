@@ -1,8 +1,8 @@
-program PrimeiroSistema;
+program Livraria;
 
 uses
   Vcl.Forms,
-  unitPrincipal in 'unitPrincipal.pas' {Form1};
+  UnitPrincipal in 'UnitPrincipal.pas' {Form1};
 
 {$R *.res}
 
