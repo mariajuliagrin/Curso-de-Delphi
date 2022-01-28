@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/01/26 15:47:11.000.602,=C:\Users\julia\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/01/26 15:47:45.000.258,C:\Users\julia\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\SistemaClinica\unitPrincipal.pas</Transaction>
+    <Transaction>2022/01/26 15:47:45.000.258,C:\Users\julia\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\SistemaClinica\unitPrincipal.dfm</Transaction>
+    <Transaction>2022/01/26 15:47:57.000.002,C:\Users\julia\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\SistemaClinica\Clinica.dproj</Transaction>
+    <Transaction>2022/01/26 16:22:43.000.183,=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\SistemaClinica\Unit2.pas</Transaction>
+    <Transaction>2022/01/26 16:23:03.000.049,C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\SistemaClinica\Unit2.pas=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\SistemaClinica\unitCadPacientes.pas</Transaction>
+    <Transaction>2022/01/26 16:23:03.000.049,C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\SistemaClinica\Unit2.dfm=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\SistemaClinica\unitCadPacientes.dfm</Transaction>
+    <Transaction>2022/01/26 16:23:15.000.472,=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\SistemaClinica\Unit3.pas</Transaction>
+    <Transaction>2022/01/26 16:23:29.000.028,C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\SistemaClinica\Unit3.pas=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\SistemaClinica\unitCadAgendamentos.pas</Transaction>
+    <Transaction>2022/01/26 16:23:29.000.028,C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\SistemaClinica\Unit3.dfm=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\SistemaClinica\unitCadAgendamentos.dfm</Transaction>
+    <Transaction>2022/01/26 16:41:25.961,=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\SistemaClinica\Unit1.pas</Transaction>
+    <Transaction>2022/01/26 16:48:13.230,C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\SistemaClinica\unitDM.dfm=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\SistemaClinica\Unit1.dfm</Transaction>
+    <Transaction>2022/01/26 16:48:13.230,C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\SistemaClinica\unitDM.pas=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\SistemaClinica\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
