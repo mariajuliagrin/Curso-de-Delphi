@@ -36,6 +36,8 @@ var
   numero1: Real;
   numero2: Real;
   resultado: Real;
+  //poderia ser declarado na mesma linha:
+  //numero1,numero2,resutado: Real;
 
 begin
  numero1 := StrToFloat( txtNumero1.Text);
