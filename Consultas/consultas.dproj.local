@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2022/01/31 14:59:56.756,=C:\Users\julia\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/01/31 15:01:09.890,C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Consultas\UnitPrincipal.dfm=C:\Users\julia\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/01/31 15:01:09.890,C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Consultas\UnitPrincipal.pas=C:\Users\julia\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/01/31 15:01:14.365,C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Consultas\consultas.dproj=C:\Users\julia\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/01/31 15:09:54.831,=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Consultas\Unit1.pas</Transaction>
+    <Transaction>2022/01/31 15:14:00.210,C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Consultas\unitDM.dfm=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Consultas\Unit1.dfm</Transaction>
+    <Transaction>2022/01/31 15:14:00.210,C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Consultas\unitDM.pas=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Consultas\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
