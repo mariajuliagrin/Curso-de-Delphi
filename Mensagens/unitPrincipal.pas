@@ -16,6 +16,7 @@ type
     Button6: TButton;
     Button7: TButton;
     Button8: TButton;
+    Button9: TButton;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -61,7 +62,10 @@ end;
 
 procedure TForm1.Button5Click(Sender: TObject);
 begin
-  Application.MessageBox('Teste de Mensagem','Pergunta',MB_ICONQUESTION+MB_OK);
+if  Application.MessageBox('Deseja realmente sair do sistema?','Confirmação',MB_ICONQUESTION+MB_YESNO) = mrYes then
+  begin
+    Application.Terminate
+  end;
 end;
 
 procedure TForm1.Button6Click(Sender: TObject);
