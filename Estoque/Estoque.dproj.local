@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2022/02/01 13:53:47.476,=C:\Users\julia\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/02/01 14:38:55.216,C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Estoque\unitPrincipal.pas=C:\Users\julia\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/02/01 14:38:55.216,C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Estoque\unitPrincipal.dfm=C:\Users\julia\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/02/01 14:39:06.426,C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Estoque\Estoque.dproj=C:\Users\julia\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/02/01 14:40:03.529,=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Estoque\Unit1.pas</Transaction>
+    <Transaction>2022/02/01 14:40:51.778,C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Estoque\unitCadProduto.dfm=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Estoque\Unit1.dfm</Transaction>
+    <Transaction>2022/02/01 14:40:51.778,C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Estoque\unitCadProduto.pas=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Estoque\Unit1.pas</Transaction>
+    <Transaction>2022/02/01 14:41:00.479,=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Estoque\Unit1.pas</Transaction>
+    <Transaction>2022/02/01 14:41:38.093,C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Estoque\unitCadMovimentacao.pas=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Estoque\Unit1.pas</Transaction>
+    <Transaction>2022/02/01 14:41:38.093,C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Estoque\unitCadMovimentacao.dfm=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Estoque\Unit1.dfm</Transaction>
+    <Transaction>2022/02/01 14:42:45.304,=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Estoque\Unit1.pas</Transaction>
+    <Transaction>2022/02/01 14:43:31.412,C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Estoque\unitConsMovimentacao.dfm=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Estoque\Unit1.dfm</Transaction>
+    <Transaction>2022/02/01 14:43:31.412,C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Estoque\unitConsMovimentacao.pas=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Estoque\Unit1.pas</Transaction>
+    <Transaction>2022/02/01 14:44:01.894,=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Estoque\Unit1.pas</Transaction>
+    <Transaction>2022/02/01 14:44:20.955,C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Estoque\unitDm.pas=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Estoque\Unit1.pas</Transaction>
+    <Transaction>2022/02/01 14:44:20.955,C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Estoque\unitDm.dfm=C:\Users\julia\Documents\MeuGit\Curso-de-Delphi\Estoque\Unit1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
