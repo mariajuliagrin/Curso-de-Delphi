@@ -5,7 +5,7 @@ object formCadMovimentacao: TformCadMovimentacao
   BorderStyle = bsSingle
   Caption = 'Cadastro de Movimenta'#231#227'o'
   ClientHeight = 496
-  ClientWidth = 733
+  ClientWidth = 1204
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,6 +14,7 @@ object formCadMovimentacao: TformCadMovimentacao
   Font.Style = []
   OldCreateOrder = False
   Position = poScreenCenter
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -79,6 +80,71 @@ object formCadMovimentacao: TformCadMovimentacao
     Font.Height = -16
     Font.Name = 'Tahoma'
     Font.Style = []
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 832
+    Top = 60
+    Width = 260
+    Height = 23
+    Caption = 'Produtos da Movimenta'#231#227'o'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 832
+    Top = 139
+    Width = 128
+    Height = 19
+    Caption = 'Escolha o produto'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Quantidade: TLabel
+    Left = 1065
+    Top = 139
+    Width = 81
+    Height = 19
+    Caption = 'Quantidade'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label8: TLabel
+    Left = 832
+    Top = 443
+    Width = 162
+    Height = 19
+    Caption = 'Total de Produtos : '
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object txtTotalProdutos: TLabel
+    Left = 1000
+    Top = 443
+    Width = 30
+    Height = 19
+    Caption = '0 0 '
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
     ParentFont = False
   end
   object DBComboBox1: TDBComboBox
@@ -156,9 +222,9 @@ object formCadMovimentacao: TformCadMovimentacao
     OnClick = DBNavigator1Click
   end
   object DBGrid1: TDBGrid
-    Left = 336
-    Top = 130
-    Width = 369
+    Left = 312
+    Top = 114
+    Width = 393
     Height = 330
     DataSource = DM.dsMovimentacoes
     TabOrder = 5
@@ -177,7 +243,7 @@ object formCadMovimentacao: TformCadMovimentacao
         Title.Font.Height = -11
         Title.Font.Name = 'Tahoma'
         Title.Font.Style = [fsBold]
-        Width = 86
+        Width = 112
         Visible = True
       end
       item
@@ -196,6 +262,85 @@ object formCadMovimentacao: TformCadMovimentacao
         Expanded = False
         FieldName = 'responsavel'
         Title.Caption = 'RESPONS'#193'VEL'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -11
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end>
+  end
+  object DBNavigator2: TDBNavigator
+    Left = 830
+    Top = 89
+    Width = 220
+    Height = 25
+    DataSource = DM.dsMovProdutos
+    VisibleButtons = [nbInsert, nbDelete, nbPost, nbCancel]
+    TabOrder = 6
+  end
+  object DBLookupComboBox1: TDBLookupComboBox
+    Left = 832
+    Top = 158
+    Width = 218
+    Height = 27
+    DataField = 'idProduto'
+    DataSource = DM.dsMovProdutos
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    KeyField = 'id'
+    ListField = 'nome'
+    ListSource = DM.dsProdutos
+    ParentFont = False
+    TabOrder = 7
+  end
+  object DBEdit3: TDBEdit
+    Left = 1065
+    Top = 158
+    Width = 121
+    Height = 27
+    DataField = 'qtd'
+    DataSource = DM.dsMovProdutos
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 8
+  end
+  object DBGrid2: TDBGrid
+    Left = 832
+    Top = 191
+    Width = 354
+    Height = 232
+    DataSource = DM.dsMovProdutos
+    TabOrder = 9
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'nomeProduto'
+        Title.Caption = 'NOME DO  PRODUTO'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -11
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 215
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'qtd'
+        Title.Caption = 'QUANTIDADE'
         Title.Font.Charset = DEFAULT_CHARSET
         Title.Font.Color = clWindowText
         Title.Font.Height = -11

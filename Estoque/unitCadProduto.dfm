@@ -14,6 +14,7 @@ object formCadProdutos: TformCadProdutos
   Font.Style = []
   OldCreateOrder = False
   Position = poScreenCenter
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -132,6 +133,7 @@ object formCadProdutos: TformCadProdutos
     Font.Height = -16
     Font.Name = 'Tahoma'
     Font.Style = []
+    MaxLength = 10
     ParentFont = False
     TabOrder = 3
   end

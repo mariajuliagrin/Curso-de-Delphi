@@ -22,6 +22,7 @@ object DM: TDM
     object tbProdutosid: TFDAutoIncField
       FieldName = 'id'
       Origin = 'id'
+      ReadOnly = True
     end
     object tbProdutosnome: TStringField
       FieldName = 'nome'
@@ -48,14 +49,51 @@ object DM: TDM
   end
   object tbMovProdutos: TFDTable
     Active = True
-    IndexFieldNames = 'id'
+    AfterPost = tbMovProdutosAfterPost
+    BeforeDelete = tbMovProdutosBeforeDelete
+    AfterDelete = tbMovProdutosAfterDelete
+    IndexName = 'idMovimentacao'
+    MasterSource = dsMovimentacoes
+    MasterFields = 'id'
     Connection = conexao
     TableName = 'Estoque.movimentacoes_produtos'
     Left = 296
     Top = 40
+    object tbMovProdutosid: TFDAutoIncField
+      FieldName = 'id'
+      Origin = 'id'
+      ReadOnly = True
+    end
+    object tbMovProdutosidMovimentacao: TIntegerField
+      FieldName = 'idMovimentacao'
+      Origin = 'idMovimentacao'
+      Required = True
+    end
+    object tbMovProdutosidProduto: TIntegerField
+      FieldName = 'idProduto'
+      Origin = 'idProduto'
+      Required = True
+    end
+    object tbMovProdutosqtd: TIntegerField
+      FieldName = 'qtd'
+      Origin = 'qtd'
+      Required = True
+    end
+    object tbMovProdutosnomeProduto: TStringField
+      FieldKind = fkLookup
+      FieldName = 'nomeProduto'
+      LookupDataSet = tbProdutos
+      LookupKeyFields = 'id'
+      LookupResultField = 'nome'
+      KeyFields = 'idProduto'
+      Size = 50
+      Lookup = True
+    end
   end
   object tbMovimentacoes: TFDTable
     Active = True
+    BeforeDelete = tbMovimentacoesBeforeDelete
+    AfterScroll = tbMovimentacoesAfterScroll
     IndexFieldNames = 'id'
     Connection = conexao
     TableName = 'Estoque.movimentacoes'
@@ -79,24 +117,36 @@ object DM: TDM
   end
   object sqlAumentaEstoque: TFDCommand
     Connection = conexao
+    CommandText.Strings = (
+      
+        'UPDATE produtos SET estoqueAtual = estoqueAtual + :pQtd WHERE id' +
+        ' = :pId')
     ParamData = <
       item
-        Name = 'pId'
+        Name = 'pQtd'
+        ParamType = ptInput
       end
       item
-        Name = 'pQtd'
+        Name = 'pId'
+        ParamType = ptInput
       end>
     Left = 120
     Top = 192
   end
   object sqlDiminuiEstoque: TFDCommand
     Connection = conexao
+    CommandText.Strings = (
+      
+        'UPDATE produtos SET estoqueAtual = estoqueAtual - :pQtd WHERE id' +
+        ' = :pId')
     ParamData = <
       item
-        Name = 'pId'
+        Name = 'pQtd'
+        ParamType = ptInput
       end
       item
-        Name = 'pQtd'
+        Name = 'pId'
+        ParamType = ptInput
       end>
     Left = 120
     Top = 264
@@ -107,11 +157,64 @@ object DM: TDM
     SQL.Strings = (
       'SELECT * FROM movimentacoes')
     Left = 248
-    Top = 200
+    Top = 192
+    ParamData = <
+      item
+        Name = 'pDataInicial'
+      end
+      item
+        Name = 'pDataFinal'
+      end>
   end
   object dsSqlMovimentacoes: TDataSource
     DataSet = sqlMovimentacoes
-    Left = 248
-    Top = 272
+    Left = 240
+    Top = 264
+  end
+  object sqlMovProdutos: TFDQuery
+    Active = True
+    IndexFieldNames = 'idMovimentacao'
+    MasterSource = dsSqlMovimentacoes
+    MasterFields = 'id'
+    Connection = conexao
+    SQL.Strings = (
+      'SELECT * FROM movimentacoes_produtos')
+    Left = 344
+    Top = 192
+    object sqlMovProdutosid: TFDAutoIncField
+      FieldName = 'id'
+      Origin = 'id'
+      ProviderFlags = [pfInWhere, pfInKey]
+    end
+    object sqlMovProdutosidMovimentacao: TIntegerField
+      FieldName = 'idMovimentacao'
+      Origin = 'idMovimentacao'
+      Required = True
+    end
+    object sqlMovProdutosidProduto: TIntegerField
+      FieldName = 'idProduto'
+      Origin = 'idProduto'
+      Required = True
+    end
+    object sqlMovProdutosqtd: TIntegerField
+      FieldName = 'qtd'
+      Origin = 'qtd'
+      Required = True
+    end
+    object sqlMovProdutosnomeProduto: TStringField
+      FieldKind = fkLookup
+      FieldName = 'nomeProduto'
+      LookupDataSet = tbProdutos
+      LookupKeyFields = 'id'
+      LookupResultField = 'nome'
+      KeyFields = 'idProduto'
+      Size = 50
+      Lookup = True
+    end
+  end
+  object dsSqlMovProdutos: TDataSource
+    DataSet = sqlMovProdutos
+    Left = 352
+    Top = 264
   end
 end
